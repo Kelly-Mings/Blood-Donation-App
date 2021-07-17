@@ -17,6 +17,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/blood-donation/contact', function () {
+    return view('contact');
+});
+
+Route::get('/blood-donation/donation-process', function () {
+    return view('donation_process');
+});
+
+Route::get('/blood-donation/eligibility', function () {
+    return view('eligibilty');
+});
+
+Route::get('/blood-donation/about', function () {
+    return view('about');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

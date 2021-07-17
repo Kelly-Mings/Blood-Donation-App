@@ -8,31 +8,37 @@
      
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
   </head>
   <body>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
               aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavId">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav ml-auto mt-lg-0 pr-5">
+                  <li class="nav-item active ">
+                      <a class="nav-link pr-5" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link pr-5" href="#">Donate Blood</a>
                   </li>
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownId">
-                          <a class="dropdown-item" href="#">Action 1</a>
-                          <a class="dropdown-item" href="#">Action 2</a>
-                      </div>
-                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link pr-5" href="/blood-donation/about">About Us</a>
+                </li>
+  
+                <li class="nav-item">
+                    <a class="nav-link pr-5" href="/blood-donation/contact">Contact</a>
+                </li>
+                  
               </ul>
             
           </div>
@@ -48,15 +54,20 @@
               <div class="carousel-item active">
                 <img src="{{asset('images/carousel-img4.jpg')}}" alt="">
                   <div class="carousel-caption d-block">
-                      <h3>Title</h3>
-                      <p>Description</p>
+                      <h3 >Donate To Save A Life Today</h3>
+                      <a href="" class="btn btn-red mr-5 mt-5">Donate Blood</a>
+                      <a href="" class="btn btn-white mt-5">Request Blood</a>
+
+                      
                   </div>
               </div>
               <div class="carousel-item">
                 <img src="{{asset('images/carousel-img3.jpg')}}" alt="">
                   <div class="carousel-caption d-block">
-                      <h3>Title</h3>
-                      <p>Description</p>
+                    <h3>Donate To Save A Life Today</h3>
+                    <a href="" class="btn btn-red mr-5 mt-5">Donate Blood</a>
+                    <a href="" class="btn btn-white mt-5">Request Blood</a>
+
                   </div>
               </div>
               
@@ -75,7 +86,7 @@
       <div class="container-fluid mt-5">
           <div class="row">
               <div class="col-md-6 pl-5">
-              <h5 class="text-primary pb-1">GET INVOLVED</h5>
+              <h6 class="text-primary pb-1 text-bolder">GET INVOLVED</h6>
               
               <h1 class="text-bolder">Ways To Help</h1>
               <div class="hr mt-3 mb-3"></div>
@@ -92,18 +103,18 @@
                    <div class="container-fluid mt-5">
                        <div class="row">
                            <div class="col-md-6 list-container">
-                            <ul class="list-styled text-muted">
-                                <li>Inspiring people to give blood</li>
-                                <li>Specialist blood donors and clinical supervision.</li>
-                                <li>Producing a safe and ready blood supply</li>
+                            <ul class="list-styled ">
+                                <li> <img src="/images/red_Cross.png" style="width:50px;margin-left:-24px" alt="red-cross-img"><span class="text-muted"> Inspiring people to give blood</span></li>
+                                <li><img src="/images/red_Cross.png" style="width:50px ;margin-left:-24px" alt="red-cross-img"><span class="text-muted">Specialist blood donors and clinical supervision.</span></li>
+                                <li><img src="/images/red_Cross.png" style="width:50px ;margin-left:-24px" alt="red-cross-img"><span class="text-muted">Producing a safe and ready blood supply</span></li>
                             </ul>  
                            </div>
 
                            <div class="col-md-6">
-                            <ul class="list-styled text-muted">
-                                <li>Inspiring people to give blood</li>
-                                <li>Specialist blood donors and clinical supervision.</li>
-                                <li>Producing a safe and ready blood supply</li>
+                            <ul class="list-styled">
+                                <li><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"><span class="text-muted">Inspiring people to give blood</li>
+                                <li><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"><span class="text-muted">Specialist blood donors and clinical supervision.</li>
+                                <li><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"><span class="text-muted">Producing a safe and ready blood supply</li>
                             </ul>  
                            </div>
 
@@ -164,6 +175,69 @@
        </div>
         <!--End Donation Information Container-->
 
+
+        <!--Donate  Blood Now  container-->
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-md-12 donate-blood-now-container">
+                    <div class="hr mt-5 mb-5"></div>
+                    <h1 class="text-bolder pb-1 ">Become a Blood Donor Today</h1>
+                    <h4 class="pb-5 text-muted">Donate Blood and save a life</h4>
+
+                    <a href="" class="btn btn-red mb-5">Donate Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Donate  Blood Now  container-->
+
+        <!--Footer-container-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-4 footer-container">
+                   <h2 class="text-white text-bolder pt-5 pl-5 pr-1">Blood Donation System</h2>
+                  <p class="text-muted pt-5 pl-5 pr-5" style="line-height: 35px">
+                    It is a long established fact that a reader will be distracted by the 
+                    readable content of a page when looking at its layout. 
+                   </p>
+            </div>
+
+            <div class="col-md-4 footer-container ">
+                <div class="hr-sm mt-5 mb-5 "></div> 
+                <h5 class=" text-bolder text-white">Quick Links</h5>
+                <ul class="list-styled  pt-5">
+                    <li><span class="text-muted">Home</li>
+                    <li><span class="text-muted">About Us</li>
+                    <li><span class="text-muted">Contact Us</li>
+                </ul>  
+               
+               </div>
+
+               <div class="col-md-4 footer-container">
+                    
+                <div class="hr-sm mt-5 mb-5 "></div> 
+                <h5 class="text-bolder text-white">Contact Us</h5>
+                <ul class="list-styled  pt-5">
+                    <li><span class="text-muted">Oxford street Avenue  365</li>
+                    <li><span class="text-muted">Phone (+233)5424234555</li>
+                    <li><span class="text-muted">info@bloodsystems.gh</li>
+                    <li><span class="text-white"></i></li>
+                </ul> 
+                
+               
+                
+               </div>
+                  
+            </div>
+
+            
+                  
+            </div>
+
+        </div>
+        <!-- End Footer container-->
+
+       
         
       
     <!-- Optional JavaScript -->
