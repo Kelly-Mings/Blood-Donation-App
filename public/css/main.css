@@ -1,0 +1,102 @@
+.carousel-inner {
+    height: 600px;
+
+
+}
+
+.carousel-item>img {
+
+    width: 100%
+}
+
+.carousel-caption {
+    position: relative;
+    bottom: 500px;
+}
+
+.img-1 {
+    width: 100%;
+    height: 610px;
+}
+
+.text-bolder {
+    font-weight: bolder;
+
+}
+
+.hr {
+    border: 2px solid red;
+    width: 100px;
+
+
+}
+
+.text-lg {
+    font-size: larger;
+}
+
+.list-container {
+    margin-left: -40px;
+}
+
+ul>li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.announcement-container {
+    background-image: url('../images/img-5.jpg');
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    text-align: center;
+
+
+
+
+}
+
+.donation-process-container {
+    background-image: url('../images/img-4.jpg');
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    text-align: center;
+
+}
+.eligibility-container {
+    background-image: url('../images/img-3.jpg');
+    background-size: cover;
+    height: 250px;
+    background-position: center;
+    text-align: center;
+
+}
+
+.btn-red {
+    height: 58px;
+    width: 170px;
+    background-color: #ee3d32;
+    font-weight: bold;
+    color: white;
+    padding-top: 13px;
+    outline: none;
+    border-color: transparent;
+
+
+}
+
+.btn-red:hover {
+    height: 58px;
+    width: 170px;
+    background-color: rgb(190, 19, 19);
+    font-weight: bold;
+    color: white;
+    padding-top: 13px;
+    outline: none;
+}
+
+.ptl {
+    padding-top: 90px;
+    padding-bottom: 20px;
+}
