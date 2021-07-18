@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Admin;
 use App\donors;
-use App\Illuminate\Facades\Storage;
+use Illuminate\Support\Facades\Storage;
 
 class DonorsController extends Controller
 {
@@ -207,7 +207,7 @@ class DonorsController extends Controller
      */
     public function destroy($id)
     {
-        $donors = donor::find($id);
+        $donors = donors::find($id);
         $donors->delete();
 
         Storage::delete('public/profile_pics'.$donors->profile_pic);
