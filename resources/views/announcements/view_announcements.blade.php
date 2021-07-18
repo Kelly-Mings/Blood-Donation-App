@@ -116,7 +116,7 @@
                           <tr>
                             <th>#SN</th>
                             <th>Title</th>
-                            <th>Blood Typ Needed</th>
+                            <th>Blood Type Needed</th>
                             <th>Date</th>
                             <th>Organizer</th>
                             <th>Requirement</th>
@@ -165,6 +165,7 @@
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>

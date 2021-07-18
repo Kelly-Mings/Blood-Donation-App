@@ -43,64 +43,77 @@
             
           </div>
       </nav>
-     
-      <!--Eligibilty container-->
+
+     <!--Announcements container-->
+     <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 donate-blood-now-container contact-container mb-5">
+              <h1 class="mt-5 ptl pl-5 text-bolder ">Announcements</h1>
+             
+          </div>
+      </div>
+  </div>
+  <!--End Announcements container-->
+
+      <!--Announcements section-->
       <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 donate-blood-now-container contact-container mb-5">
-                <h1 class="mt-5 ptl pl-5 text-bolder ">Give Blood Now</h1>
-               
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid">
-        <div class="row mt-5 mb-6">
-            <div class="col-md-4 mr-6">
-                <div class="hr ml-5"></div>
-               <h1 class="text-bolder pl-5 pt-5 text-larger">Requirements by Blood Type</h1>
-               <h5 class="text-muted pl-5 pt-5">These are some of the requirements donors must meet to be eligible
-                to donate blood based on their donation type. </h5>
-               <ul class="list-styled  pt-4 pl-6 requirement-list">
-                <li><span class="text-muted">Donation frequency: Every 56 days*</span></li>
-                <li><span class="text-muted">You must be in good health and feeling well**</span></li>
-                <li><span class="text-muted">You must be at least 16 years old in most states</span></li>
-                <li><span class="text-muted">You must weigh at least 110 lbs</span></li>
-               
-              
-            </ul>  
-            <a href="/blood-donation/donate-blood/create" class="btn btn-red ml-5">Donate Now</a>
-            
-            </div>
-            <div class="col-md-6 ml-5 ">
-              
-                    <img src="/images/img-9.jpg" style="height:600px; width:100%" alt="eligibility-img">
-                    
-                 
-            </div>
-
-
-        </div>
-       
-
-        <div class="row mt-5 mb-6">
-            <div class="col-md-6">
-              
-                <img src="/images/img-10.jpg" style="height:600px; width:100%" alt="eligibility-img">
+          <div class="col-lg-12">
+            <div class="card shadow-lg">
+              <div class="card-header text-white bg-primary"> Announcements
                 
-             
-        </div>
-            <div class="col-md-4 ml-3">
-                <h2 class="text-larger ">The Donation Process</h2><br><hr class="text-muted"><br>
-                <h3 class=""><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"> Register</h3><br><hr class="text-muted"><br>
-                <h3 class=""><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"> Donate</h3><br><hr class="text-muted"><br>
-                <h3 class=""><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"> Save a Life</h3><br><hr class="text-muted"><br>
+              </div> 
+              <div class="card-body">
+                @if(count($announcements)>0)
+                <table class="table table-striped table-responsive-sm table-responsive-md">
+                  <thead>
+                    <tr>
+                      <th>#SN</th>
+                      <th>Title</th>
+                      <th>Blood Type Needed</th>
+                      <th>Date</th>
+                      <th>Organizer</th>
+                      <th>Requirement</th>
+                     
+                      
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @foreach($announcements as $announcement)
+                    <tr>
+                      <td>{{ $announcement->id }}</td>
+                      <td>{{ $announcement->title }}</td>
+                      <td>{{ $announcement->blood_type_needed }}</td>
+                      <td>{{ $announcement->date }}</td>
+                      <td>{{ $announcement->organizer}}
+                      </td>
+                      <td>{{ $announcement->requirement }}</td>
+                   
+                      
+                      
+    
+                      
+                     
+                     
+                    </tr>
+                    @endforeach
+                  </tbody>
+                </table>
+                @else
+                <h3><strong>There are no announcements</strong></h3>
+                @endif
                 
-              
+                
+                
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+      
+      <!--End Announcements section-->
+
 
         <!--Footer-container-->
         <div class="container-fluid">

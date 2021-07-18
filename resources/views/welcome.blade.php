@@ -28,7 +28,7 @@
                       <a class="nav-link pr-5" href="#">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link pr-5" href="#">Donate Blood</a>
+                      <a class="nav-link pr-5" href="/blood-donation/donate-blood/create">Donate Blood</a>
                   </li>
 
                   <li class="nav-item">
@@ -55,8 +55,9 @@
                 <img src="{{asset('images/carousel-img4.jpg')}}" alt="">
                   <div class="carousel-caption d-block">
                       <h3 >Donate To Save A Life Today</h3>
-                      <a href="" class="btn btn-red mr-5 mt-5">Donate Blood</a>
-                      <a href="" class="btn btn-white mt-5">Request Blood</a>
+                      
+                      <a href="/blood-donation/donate-blood/create" class="btn btn-red mr-5 mt-5">Donate Blood</a>
+                      <a href="/blood-donation/blood-request/create" class="btn btn-white mt-5">Request Blood</a>
 
                       
                   </div>
@@ -139,7 +140,7 @@
                     <h2 class="text-white text-bolder ptl">
                         Announcements
                     </h2>
-                    <a href="" class="btn btn-red">Learn more</a>
+                    <a href="/blood-donation/announcements" class="btn btn-red">Learn more</a>
                    </div>
                </div>
                 <!--End Announcements Container-->
@@ -151,7 +152,7 @@
                     <h2 class="text-white text-bolder ptl">
                         Donation Process
                     </h2>
-                    <a href="" class="btn btn-red">Learn more</a>
+                    <a href="/blood-donation/donation-process" class="btn btn-red">Learn more</a>
                   </div>
                 
 
@@ -165,7 +166,7 @@
                     <h2 class="text-white text-bolder ptl">
                        Eligibilty
                     </h2>
-                    <a href="" class="btn btn-red">Learn more</a>
+                    <a href="/blood-donation/eligibility" class="btn btn-red">Learn more</a>
                  </div>
               
 
@@ -184,7 +185,7 @@
                     <h1 class="text-bolder pb-1 ">Become a Blood Donor Today</h1>
                     <h4 class="pb-5 text-muted">Donate Blood and save a life</h4>
 
-                    <a href="" class="btn btn-red mb-5">Donate Now</a>
+                    <a href="/blood-donation/donate-blood/create" class="btn btn-red mb-5">Donate Now</a>
                 </div>
             </div>
         </div>

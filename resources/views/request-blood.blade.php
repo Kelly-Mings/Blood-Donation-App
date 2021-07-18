@@ -43,64 +43,98 @@
             
           </div>
       </nav>
-     
-      <!--Eligibilty container-->
+
+      <!--Request blood  container-->
       <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 donate-blood-now-container contact-container mb-5">
-                <h1 class="mt-5 ptl pl-5 text-bolder ">Give Blood Now</h1>
+                <h1 class="mt-5 ptl pl-5 text-bolder ">Request Blood Now</h1>
                
             </div>
         </div>
     </div>
-
-
-    <div class="container-fluid">
-        <div class="row mt-5 mb-6">
-            <div class="col-md-4 mr-6">
-                <div class="hr ml-5"></div>
-               <h1 class="text-bolder pl-5 pt-5 text-larger">Requirements by Blood Type</h1>
-               <h5 class="text-muted pl-5 pt-5">These are some of the requirements donors must meet to be eligible
-                to donate blood based on their donation type. </h5>
-               <ul class="list-styled  pt-4 pl-6 requirement-list">
-                <li><span class="text-muted">Donation frequency: Every 56 days*</span></li>
-                <li><span class="text-muted">You must be in good health and feeling well**</span></li>
-                <li><span class="text-muted">You must be at least 16 years old in most states</span></li>
-                <li><span class="text-muted">You must weigh at least 110 lbs</span></li>
-               
-              
-            </ul>  
-            <a href="/blood-donation/donate-blood/create" class="btn btn-red ml-5">Donate Now</a>
-            
+    <!--End Request blood container-->
+     
+     <!--Request for Blood Form-->
+     <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+          <div class="card shadow-lg">
+            <div class="card-header text-white bg-primary">
+             BLOOD REQUEST
             </div>
-            <div class="col-md-6 ml-5 ">
-              
-                    <img src="/images/img-9.jpg" style="height:600px; width:100%" alt="eligibility-img">
+            <div class="card-body">
+
+                <div class="container-fluid">
+                    {!! Form::open(['method'=>'POST','action'=>'UserBloodRequestController@store','enctype'=>'multipart/form-data']) !!}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                
                     
-                 
-            </div>
+                                      
+                                  Name Of Patient
+                                   {!! Form::text('patient_name', '', ['class'=>'form-control','placeholder'=>'full name of patient']) !!} <br>
+                               
+                                  Gender
+                                     {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],'' ,['class'=>'form-control','placeholder'=>'-Gender- ']) !!} <br>
+                    
+                    
+                                    Date Required
+                                    
+                                  {!! Form::date('date_required', 'dd/mm/yy', ['class'=>'form-control']) !!} <br>
+                             
+                                  Address 
+                                   {!! Form::text('address','', ['class'=>'form-control','placeholder'=>'Address']) !!} <br>
+                    
+                    
+                                 Contact
+                                   {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+                       
+                            
+                              
+                                
+                           </div>
+                        </div>
 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                               
+                    
+                            
+                                Reason For Request
+                                   {!! Form::text('reason_for_request','', ['class'=>'form-control','placeholder'=>'Reason for Request']) !!} <br>
+                          
+                              Unit Of Blood 
+                                   {!! Form::text('unit_of_blood','', ['class'=>'form-control','placeholder'=>'Unit Of Blood ']) !!} <br>
+                      
+                       
+                            Hospital Address
+                                   {!! Form::text('hospital_address','', ['class'=>'form-control','placeholder'=>'Hospital Address']) !!} <br>
+                      
+                    
+                    
+                          Profile Picture
+                                    {!! Form::file('profile_pic', ['class'=>'form-control']) !!}<br><br> 
+                                   
+                          {!! Form::submit('add', ['class'=>'btn btn-primary mt-3 ']) !!} 
+                    
+                                  
+                           </div>
+                        </div>
+                    </div>
+                    {!! Form::close() !!} 
+                </div>
 
-        </div>
-       
-
-        <div class="row mt-5 mb-6">
-            <div class="col-md-6">
-              
-                <img src="/images/img-10.jpg" style="height:600px; width:100%" alt="eligibility-img">
-                
              
-        </div>
-            <div class="col-md-4 ml-3">
-                <h2 class="text-larger ">The Donation Process</h2><br><hr class="text-muted"><br>
-                <h3 class=""><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"> Register</h3><br><hr class="text-muted"><br>
-                <h3 class=""><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"> Donate</h3><br><hr class="text-muted"><br>
-                <h3 class=""><img src="/images/red_Cross.png" style="width:50px" alt="red-cross-img"> Save a Life</h3><br><hr class="text-muted"><br>
-                
-              
             </div>
-        </div>
-    </div>
+            
+          </div>
+                </div>
+            </div>
+           </div>
+      <!--End Request for Blood Form-->
+
 
         <!--Footer-container-->
         <div class="container-fluid">

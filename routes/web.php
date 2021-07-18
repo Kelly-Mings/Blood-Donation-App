@@ -74,3 +74,18 @@ Route::prefix('admin')->group(function () {
     
     //Donors Routes
     Route::resource('/admin/donors','DonorsController');
+
+
+     //User Announcements routes
+     Route::resource('/blood-donation/announcements','UserAnnouncementsController');
+    
+     
+     
+     //user Blood Request routes 
+     Route::resource('/blood-donation/blood-request','UserBloodRequestController');
+     
+     //User Campaign Routes 
+     Route::resource('/blood-donation/campaign','UserCampaignController');
+     
+     //User Donors Routes
+     Route::resource('/blood-donation/donate-blood','UserBloodDonateController');

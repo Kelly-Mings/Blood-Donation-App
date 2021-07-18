@@ -28,7 +28,7 @@
                     <a class="nav-link pr-5" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pr-5" href="#">Donate Blood</a>
+                    <a class="nav-link pr-5" href="/blood-donation/donate-blood/create">Donate Blood</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link pr-5" href="/blood-donation/about">About Us</a>

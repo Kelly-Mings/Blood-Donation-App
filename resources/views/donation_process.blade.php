@@ -21,10 +21,10 @@
           <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-lg-0 pr-5">
                 <li class="nav-item active ">
-                    <a class="nav-link pr-5" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link pr-5" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link pr-5" href="#">Donate Blood</a>
+                    <a class="nav-link pr-5" href="/blood-donation/donate-blood/create">Donate Blood</a>
                 </li>
 
                 <li class="nav-item">
@@ -66,7 +66,7 @@
                
               
             </ul>  
-            <a href="" class="btn btn-red ml-5">Donate Now</a>
+            <a href="/blood-donation/donate-blood/create" class="btn btn-red ml-5">Donate Now</a>
             
             </div>
             <div class="col-md-6 ml-5 ">
