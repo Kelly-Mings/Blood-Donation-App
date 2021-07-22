@@ -3,6 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Admin;
+use App\blood_info;
+use App\announcements;
+use App\donors;
+use App\blood_request;
+use App\campaigns;
+
 
 class AdminController extends Controller
 {
@@ -23,6 +30,13 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin');
+        $admins = Admin::all();
+        $announcements = announcements::all();
+        $campaigns = campaigns::all();
+        $donors = donors::all();
+        $requests = blood_request::all();
+        $bloods = blood_info::all();
+
+        return view('admin')->with('admins',$admins)->with('announcements',$announcements)->with('campaigns',$campaigns)->with('donors',$donors)->with('bloods',$bloods)->with('requests',$requests);
     }
 }
