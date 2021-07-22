@@ -123,39 +123,39 @@
                 {!! Form::open(['action'=>['BloodRequestController@update',$blood_requests->id],'method'=>'POST','enctype'=>'multipart/form-data']) !!}   
            
                Full Name Of Patient 
-                   {!! Form::text('patient_name', $blood_requests->patient_name, ['class'=>'form-control','placeholder'=>'full name of patient']) !!} <br>
+                   {!! Form::text('patient_name', $blood_requests->patient_name, ['class'=>'form-control','placeholder'=>'full name of patient','required'=>'required']) !!} <br>
                
    
                 Gender
-                     {!! Form::select('Gender', ['Male'=>'Male','Female'=>'Female'],$blood_requests->gender ,['class'=>'form-control','placeholder'=>'-Gender- ']) !!} <br>
+                     {!! Form::select('Gender', ['Male'=>'Male','Female'=>'Female'],$blood_requests->gender ,['class'=>'form-control','placeholder'=>'-Gender- ','required'=>'required']) !!} <br>
    
    
                     
                   Date  Required
-                  {!! Form::date('date_required', $blood_requests->date_required, ['class'=>'form-control']) !!} <br>
+                  {!! Form::date('date_required', $blood_requests->date_required, ['class'=>'form-control','required'=>'required']) !!} <br>
              
              Address
-                   {!! Form::text('address',$blood_requests->address, ['class'=>'form-control','placeholder'=>'Address']) !!} <br>
+                   {!! Form::text('address',$blood_requests->address, ['class'=>'form-control','placeholder'=>'Address','required'=>'required']) !!} <br>
    
    
                Contact 
-                   {!! Form::text('contact',$blood_requests->contact, ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+                   {!! Form::text('contact',$blood_requests->contact, ['class'=>'form-control','placeholder'=>'Contact','required'=>'required']) !!} <br>
        
             
              Reason For Request 
-                   {!! Form::text('reason_for_request',$blood_requests->reason_for_request, ['class'=>'form-control','placeholder'=>'Reason for Request']) !!} <br>
+                   {!! Form::text('reason_for_request',$blood_requests->reason_for_request, ['class'=>'form-control','placeholder'=>'Reason for Request','required'=>'required']) !!} <br>
           
            Unit Of Blood 
-                   {!! Form::text('unit_of_blood',$blood_requests->unit_of_blood, ['class'=>'form-control','placeholder'=>'Unit Of Blood ']) !!} <br>
+                   {!! Form::text('unit_of_blood',$blood_requests->unit_of_blood, ['class'=>'form-control','placeholder'=>'Unit Of Blood ','required'=>'required']) !!} <br>
       
        
           Hospital Address
-                   {!! Form::text('hospital_address',$blood_requests->hospital_address, ['class'=>'form-control','placeholder'=>'Hospital Address']) !!} <br>
+                   {!! Form::text('hospital_address',$blood_requests->hospital_address, ['class'=>'form-control','placeholder'=>'Hospital Address','required'=>'required']) !!} <br>
       
    
    
       Upload Profile Picture
-                    {!! Form::file('profile_pic', ['class'=>'form-control']) !!}<br><br> 
+                    {!! Form::file('profile_pic', ['class'=>'form-control','required'=>'required']) !!}<br><br> 
                    
            {!! Form::hidden('_method', 'PUT') !!} 
    

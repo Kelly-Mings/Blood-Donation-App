@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{{asset('css/main.css')}}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
       <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
@@ -56,8 +58,8 @@
                   <div class="carousel-caption d-block">
                       <h3 >Donate To Save A Life Today</h3>
                       
-                      <a href="/blood-donation/donate-blood/create" class="btn btn-red mr-5 mt-5">Donate Blood</a>
-                      <a href="/blood-donation/blood-request/create" class="btn btn-white mt-5">Request Blood</a>
+                      <a href="/blood-donation/donate-blood/create" class="btn btn-red mr-5 mt-5" data-aos="fade-right" data-aos-duration="2000">Donate Blood</a>
+                      <a href="/blood-donation/blood-request/create" class="btn btn-white mt-5" data-aos="fade-left" data-aos-duration="2000">Request Blood</a>
 
                       
                   </div>
@@ -66,8 +68,8 @@
                 <img src="{{asset('images/carousel-img3.jpg')}}" alt="">
                   <div class="carousel-caption d-block">
                     <h3>Donate To Save A Life Today</h3>
-                    <a href="" class="btn btn-red mr-5 mt-5">Donate Blood</a>
-                    <a href="" class="btn btn-white mt-5">Request Blood</a>
+                    <a href="" class="btn btn-red mr-5 mt-5" data-aos="fade-right" data-aos-duration="2000">Donate Blood</a>
+                    <a href="" class="btn btn-white mt-5" data-aos="fade-left" data-aos-duration="2000">Request Blood</a>
 
                   </div>
               </div>
@@ -89,7 +91,7 @@
               <div class="col-md-6 pl-5">
               <h6 class="text-primary pb-1 text-bolder">GET INVOLVED</h6>
               
-              <h1 class="text-bolder">Ways To Help</h1>
+              <h1 class="text-bolder" data-aos="fade-right" data-aos-duration="2000">Ways To Help</h1>
               <div class="hr mt-3 mb-3"></div>
               <p class="text-muted text-lg">Blood Center is public donation center with blood donation members in the 
                 changing health care system. Founded in 1978, Blood Center
@@ -124,7 +126,7 @@
                    <!--End ways to get involved List-->
                    
               </div>
-              <div class="col-md-6 ">
+              <div class="col-md-6 " data-aos="zoom-in-left" data-aos-duration="2000">
                 <img src="{{asset('images/img1.jpeg')}}" alt="image-1" class="img-1"> 
             </div>
           </div>
@@ -135,7 +137,7 @@
        <div class="container-fluid mt-5">
            <div class="row">
                <!--Announcements Container-->
-               <div class="col-md-4  ">
+               <div class="col-md-4 " data-aos="fade-right" data-aos-duration="2000">
                    <div class="announcement-container">
                     <h2 class="text-white text-bolder ptl">
                         Announcements
@@ -147,7 +149,7 @@
 
 
               <!--Donation Process Container-->
-              <div class="col-md-4  ">
+              <div class="col-md-4  " data-aos="fade-up" data-aos-duration="2000">
                   <div class="donation-process-container ">
                     <h2 class="text-white text-bolder ptl">
                         Donation Process
@@ -161,7 +163,7 @@
 
 
              <!--Eligibilty Container-->
-             <div class="col-md-4 ">
+             <div class="col-md-4 " data-aos="fade-left" data-aos-duration="2000">
                  <div class="eligibility-container">
                     <h2 class="text-white text-bolder ptl">
                        Eligibilty
@@ -182,10 +184,10 @@
             <div class="row">
                 <div class="col-md-12 donate-blood-now-container">
                     <div class="hr mt-5 mb-5"></div>
-                    <h1 class="text-bolder pb-1 ">Become a Blood Donor Today</h1>
+                    <h1 class="text-bolder pb-1 " data-aos="fade-right" data-aos-duration="2000">Become a Blood Donor Today</h1>
                     <h4 class="pb-5 text-muted">Donate Blood and save a life</h4>
 
-                    <a href="/blood-donation/donate-blood/create" class="btn btn-red mb-5">Donate Now</a>
+                    <a href="/blood-donation/donate-blood/create" class="btn btn-red mb-5" data-aos="fade-left" data-aos-duration="2000">Donate Now</a>
                 </div>
             </div>
         </div>
@@ -242,7 +244,13 @@
         
       
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

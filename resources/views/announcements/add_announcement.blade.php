@@ -125,23 +125,23 @@
           
                       
                 <b>Enter Title of Announcement</b> 
-                 {!! Form::text('announcement_title', '', ['class'=>'form-control','placeholder'=>'--announcement title-- ']) !!} <br><br>
+                 {!! Form::text('announcement_title', '', ['class'=>'form-control','placeholder'=>'--announcement title-- ','required'=>'required']) !!} <br><br>
              
           
           
                 <b>Select Blood type </b>
-                {!! Form::select('blood_type_needed', ['O'=>'O','O+'=>'O+','O-'=>'O-','A'=>'A','A+'=>'A+','A-'=>'A-','B'=>'B','B+'=>'B+','B-'=>'B-','AB'=>'AB','AB+'=>'AB+','AB-'=>'AB-'],'' ,['class'=>'form-control','placeholder'=>'-Blood type- ']) !!} <br>
+                {!! Form::select('blood_type_needed', ['O'=>'O','O+'=>'O+','O-'=>'O-','A'=>'A','A+'=>'A+','A-'=>'A-','B'=>'B','B+'=>'B+','B-'=>'B-','AB'=>'AB','AB+'=>'AB+','AB-'=>'AB-'],'' ,['class'=>'form-control','placeholder'=>'-Blood type- ' ,'required'=>'required']) !!} <br>
           
           
                <b>Enter Date Of Announcement</b>
-                {!! Form::date('announcement_date', \Illuminate\Support\Carbon::now(), ['class'=>'form-control','placeholder'=>'dd/mm/yy']) !!} <br><br>
+                {!! Form::date('announcement_date', \Illuminate\Support\Carbon::now(), ['class'=>'form-control','placeholder'=>'dd/mm/yy','required'=>'required']) !!} <br><br>
            
               <b>Enter Name Of Organizer</b>
-                 {!! Form::text('organizer','', ['class'=>'form-control','placeholder'=>'--Eg:Unity Health Center--']) !!} <br><br>
+                 {!! Form::text('organizer','', ['class'=>'form-control','placeholder'=>'--Eg:Unity Health Center--','required'=>'required']) !!} <br><br>
           
           
                  <b>Enter the Requirement</b>
-                 {!! Form::text('requirement','', ['class'=>'form-control','placeholder'=>'--Eg:Healthy person with blood type O needed--']) !!} <br>
+                 {!! Form::text('requirement','', ['class'=>'form-control','placeholder'=>'--Eg:Healthy person with blood type O needed--','required'=>'required']) !!} <br>
           
                  
           {!! Form::submit('add', ['class'=>'btn btn-primary mt-3 ']) !!} 

@@ -124,36 +124,36 @@
        
                    
               Full Name Of Donor
-                {!! Form::text('donor_name', '', ['class'=>'form-control','placeholder'=>'full name of donor']) !!} <br>
+                {!! Form::text('donor_name', '', ['class'=>'form-control','placeholder'=>'full name of donor','required'=>'required']) !!} <br>
             
 
               Gender
-                  {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],'' ,['class'=>'form-control','placeholder'=>'-Gender- ']) !!} <br>
+                  {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],'' ,['class'=>'form-control','placeholder'=>'-Gender- ','required'=>'required']) !!} <br>
 
               Blood Group
-                {!! Form::text('blood_group','', ['class'=>'form-control','placeholder'=>'Blood Group']) !!} <br>
-    
+              {!! Form::select('blood_group', ['O'=>'O','O+'=>'O+','O-'=>'O-','A'=>'A','A+'=>'A+','A-'=>'A-','B'=>'B','B+'=>'B+','B-'=>'B-','AB'=>'AB','AB+'=>'AB+','AB-'=>'AB-'],'' ,['class'=>'form-control','placeholder'=>'-Blood type- ','required'=>'required']) !!} <br>
+          
                  
                 Date Of Birth
-               {!! Form::date('date_of_birth', \Illuminate\Support\Carbon::now(), ['class'=>'form-control']) !!} <br>
+               {!! Form::date('date_of_birth', \Illuminate\Support\Carbon::now(), ['class'=>'form-control','required'=>'required']) !!} <br>
 
                E-mail Of Donor
-                {!! Form::text('e_mail','', ['class'=>'form-control','placeholder'=>'E-mail']) !!} <br>
+                {!! Form::text('e_mail','', ['class'=>'form-control','placeholder'=>'E-mail','required'=>'required']) !!} <br>
 
           
              Address Of Donor
-                {!! Form::text('address','', ['class'=>'form-control','placeholder'=>'Address']) !!} <br>
+                {!! Form::text('address','', ['class'=>'form-control','placeholder'=>'Address','required'=>'required']) !!} <br>
 
 
              Contact Of Donor
-                {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+                {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact','required'=>'required']) !!} <br>
     
          
           User name 
-                {!! Form::text('username','', ['class'=>'form-control','placeholder'=>'Username']) !!} <br>
+                {!! Form::text('username','', ['class'=>'form-control','placeholder'=>'Username','required'=>'required']) !!} <br>
        
         Full Name Of Guardian
-                {!! Form::text('guardian_name','', ['class'=>'form-control','placeholder'=>'Name of Guardian ']) !!} <br>
+                {!! Form::text('guardian_name','', ['class'=>'form-control','placeholder'=>'Name of Guardian ','required'=>'required']) !!} <br>
 
        Upload a Profile Picture
                  {!! Form::file('profile_pic', ['class'=>'form-control']) !!}<br><br> 

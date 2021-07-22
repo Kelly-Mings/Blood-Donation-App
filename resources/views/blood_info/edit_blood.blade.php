@@ -124,22 +124,24 @@
                 {!! Form::open(['action'=>['BloodInfoController@update',$bloods->id],'method'=>'POST']) !!}   
            
                 Full Name Of DOnor 
-                   {!! Form::text('donor_full_name', $bloods->donor_full_name, ['class'=>'form-control','placeholder'=>'full name of donor']) !!} <br>
+                   {!! Form::text('donor_full_name', $bloods->donor_full_name, ['class'=>'form-control','placeholder'=>'full name of donor','required'=>'required']) !!} <br>
                
    
    
                 Blood Group Of Donor
-                   {!! Form::text('blood_group', $bloods->blood_group, ['class'=>'form-control','placeholder'=>'Blood Group']) !!} <br>
+                {!! Form::select('blood_group', ['O'=>'O','O+'=>'O+','O-'=>'O-','A'=>'A','A+'=>'A+','A-'=>'A-','B'=>'B','B+'=>'B+','B-'=>'B-','AB'=>'AB','AB+'=>'AB+','AB-'=>'AB-'],$bloods->blood_group ,['class'=>'form-control','placeholder'=>'-Blood type- ','required'=>'required']) !!} <br>
+          
+                 
    
                   Gender
-                     {!! Form::select('Gender', ['Male'=>'Male','Female'=>'Female'],$bloods->gender ,['class'=>'form-control','placeholder'=>'-Gender- ']) !!} <br>
+                     {!! Form::select('Gender', ['Male'=>'Male','Female'=>'Female'],$bloods->gender ,['class'=>'form-control','placeholder'=>'-Gender- ','required'=>'required']) !!} <br>
    
    
                     Quantity of Blood Recorded
-                   {!! Form::text('quantity',$bloods->quantity, ['class'=>'form-control','placeholder'=>'Quantity']) !!} <br>
+                   {!! Form::text('quantity',$bloods->quantity, ['class'=>'form-control','placeholder'=>'Quantity','required'=>'required']) !!} <br>
    
                   Date Of Collection
-                  {!! Form::date('collection_date', $bloods->collection_date, ['class'=>'form-control']) !!} <br>
+                  {!! Form::date('collection_date', $bloods->collection_date, ['class'=>'form-control','required'=>'required']) !!} <br>
              
               
    

@@ -122,38 +122,38 @@
 
                   
               Name Of Patient
-               {!! Form::text('patient_name', '', ['class'=>'form-control','placeholder'=>'full name of patient']) !!} <br>
+               {!! Form::text('patient_name', '', ['class'=>'form-control','placeholder'=>'full name of patient','required'=>'required']) !!} <br>
            
               Gender
-                 {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],'' ,['class'=>'form-control','placeholder'=>'-Gender- ']) !!} <br>
+                 {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],'' ,['class'=>'form-control','placeholder'=>'-Gender- ','required'=>'required']) !!} <br>
 
 
                 Date Required
                 
-              {!! Form::date('date_required', 'dd/mm/yy', ['class'=>'form-control']) !!} <br>
+              {!! Form::date('date_required', 'dd/mm/yy', ['class'=>'form-control','required'=>'required']) !!} <br>
          
               Address 
-               {!! Form::text('address','', ['class'=>'form-control','placeholder'=>'Address']) !!} <br>
+               {!! Form::text('address','', ['class'=>'form-control','placeholder'=>'Address','required'=>'required']) !!} <br>
 
 
              Contact
-               {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+               {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact','required'=>'required']) !!} <br>
    
         
             Reason For Request
-               {!! Form::text('reason_for_request','', ['class'=>'form-control','placeholder'=>'Reason for Request']) !!} <br>
+               {!! Form::text('reason_for_request','', ['class'=>'form-control','placeholder'=>'Reason for Request','required'=>'required']) !!} <br>
       
           Unit Of Blood 
-               {!! Form::text('unit_of_blood','', ['class'=>'form-control','placeholder'=>'Unit Of Blood ']) !!} <br>
+               {!! Form::text('unit_of_blood','', ['class'=>'form-control','placeholder'=>'Unit Of Blood ','required'=>'required']) !!} <br>
   
    
         Hospital Address
-               {!! Form::text('hospital_address','', ['class'=>'form-control','placeholder'=>'Hospital Address']) !!} <br>
+               {!! Form::text('hospital_address','', ['class'=>'form-control','placeholder'=>'Hospital Address','required'=>'required']) !!} <br>
   
 
 
       Profile Picture
-                {!! Form::file('profile_pic', ['class'=>'form-control']) !!}<br><br> 
+                {!! Form::file('profile_pic', ['class'=>'form-control','required'=>'required']) !!}<br><br> 
                
       {!! Form::submit('add', ['class'=>'btn btn-primary mt-3 ']) !!} 
 

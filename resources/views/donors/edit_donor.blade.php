@@ -124,39 +124,39 @@
         
                    
              Full Name Of Donor
-                {!! Form::text('donor_name', $donors->name, ['class'=>'form-control','placeholder'=>'full name of donor']) !!} <br>
+                {!! Form::text('donor_name', $donors->name, ['class'=>'form-control','placeholder'=>'full name of donor','required'=>'required']) !!} <br>
             
 
                Gender
-                  {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],$donors->gender ,['class'=>'form-control','placeholder'=>'-Gender- ']) !!} <br>
+                  {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],$donors->gender ,['class'=>'form-control','placeholder'=>'-Gender- ','required'=>'required']) !!} <br>
 
              Blood Group
-                {!! Form::text('blood_group',$donors->blood_group, ['class'=>'form-control','placeholder'=>'Blood Group']) !!} <br>
-    
+             {!! Form::select('blood_group', ['O'=>'O','O+'=>'O+','O-'=>'O-','A'=>'A','A+'=>'A+','A-'=>'A-','B'=>'B','B+'=>'B+','B-'=>'B-','AB'=>'AB','AB+'=>'AB+','AB-'=>'AB-'],$donors->blood_group ,['class'=>'form-control','placeholder'=>'-Blood type- ','required'=>'required']) !!} <br>
+          
                  
                Date Of Birth
-               {!! Form::date('date_of_birth', $donors->date_of_birth, ['class'=>'form-control']) !!} <br>
+               {!! Form::date('date_of_birth', $donors->date_of_birth, ['class'=>'form-control','required'=>'required']) !!} <br>
 
                E-mail Of Donor 
-                {!! Form::text('e_mail',$donors->e_mail, ['class'=>'form-control','placeholder'=>'E-mail']) !!} <br>
+                {!! Form::text('e_mail',$donors->e_mail, ['class'=>'form-control','placeholder'=>'E-mail','required'=>'required']) !!} <br>
 
           
            Address Of Donor
-                {!! Form::text('address',$donors->address, ['class'=>'form-control','placeholder'=>'Address']) !!} <br>
+                {!! Form::text('address',$donors->address, ['class'=>'form-control','placeholder'=>'Address','required'=>'required']) !!} <br>
 
 
             Contact 
-                {!! Form::text('contact',$donors->contact, ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+                {!! Form::text('contact',$donors->contact, ['class'=>'form-control','placeholder'=>'Contact','required'=>'required']) !!} <br>
     
          
           User Name
-                {!! Form::text('username',$donors->username, ['class'=>'form-control','placeholder'=>'Username']) !!} <br>
+                {!! Form::text('username',$donors->username, ['class'=>'form-control','placeholder'=>'Username','required'=>'required']) !!} <br>
        
         Name Of Guardian
-                {!! Form::text('guardian_name',$donors->guardian_name, ['class'=>'form-control','placeholder'=>'Name of Guardian ']) !!} <br>
+                {!! Form::text('guardian_name',$donors->guardian_name, ['class'=>'form-control','placeholder'=>'Name of Guardian ','required'=>'required']) !!} <br>
 
      Upload Picture Here
-                 {!! Form::file('profile_pic', ['class'=>'form-control']) !!}<br><br> 
+                 {!! Form::file('profile_pic', ['class'=>'form-control','required'=>'required']) !!}<br><br> 
                 
         {!! Form::hidden('_method', 'PUT') !!} 
 

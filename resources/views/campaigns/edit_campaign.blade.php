@@ -123,23 +123,23 @@
              {!! Form::open(['action'=>['CampaignController@update',$campaigns->id],'method'=>'POST']) !!}   
           
            Name Of Campaign
-                {!! Form::text('campaign_name', $campaigns->name, ['class'=>'form-control','placeholder'=>'name of campaign']) !!} <br>
+                {!! Form::text('campaign_name', $campaigns->name, ['class'=>'form-control','placeholder'=>'name of campaign','required'=>'required']) !!} <br>
             
             Name Of Organizer
-                {!! Form::text('organizer_name',$campaigns->organizer_name, ['class'=>'form-control','placeholder'=>'Organizer Name']) !!} <br>
+                {!! Form::text('organizer_name',$campaigns->organizer_name, ['class'=>'form-control','placeholder'=>'Organizer Name','required'=>'required']) !!} <br>
 
 
             Contact
-                {!! Form::text('contact',$campaigns->contact, ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+                {!! Form::text('contact',$campaigns->contact, ['class'=>'form-control','placeholder'=>'Contact','required'=>'required']) !!} <br>
     
                  
                  Date
-               {!! Form::date('date', $campaigns->date, ['class'=>'form-control']) !!} <br>
+               {!! Form::date('date', $campaigns->date, ['class'=>'form-control','required'=>'required']) !!} <br>
           
           
          
              Description 
-                {!! Form::text('description',$campaigns->description, ['class'=>'form-control','placeholder'=>'Description']) !!} <br>
+                {!! Form::text('description',$campaigns->description, ['class'=>'form-control','placeholder'=>'Description','required'=>'required']) !!} <br>
        
             
         {!! Form::hidden('_method', 'PUT') !!} 

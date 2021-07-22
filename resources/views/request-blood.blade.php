@@ -74,22 +74,22 @@
                     
                                       
                                   Name Of Patient
-                                   {!! Form::text('patient_name', '', ['class'=>'form-control','placeholder'=>'full name of patient']) !!} <br>
+                                   {!! Form::text('patient_name', '', ['class'=>'form-control','placeholder'=>'full name of patient','required'=>'required']) !!} <br>
                                
                                   Gender
-                                     {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],'' ,['class'=>'form-control','placeholder'=>'-Gender- ']) !!} <br>
+                                     {!! Form::select('gender', ['Male'=>'Male','Female'=>'Female'],'' ,['class'=>'form-control','placeholder'=>'-Gender- ','required'=>'required']) !!} <br>
                     
                     
                                     Date Required
                                     
-                                  {!! Form::date('date_required', 'dd/mm/yy', ['class'=>'form-control']) !!} <br>
+                                  {!! Form::date('date_required', 'dd/mm/yy', ['class'=>'form-control','required'=>'required']) !!} <br>
                              
                                   Address 
-                                   {!! Form::text('address','', ['class'=>'form-control','placeholder'=>'Address']) !!} <br>
+                                   {!! Form::text('address','', ['class'=>'form-control','placeholder'=>'Address','required'=>'required']) !!} <br>
                     
                     
                                  Contact
-                                   {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+                                   {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact','required'=>'required']) !!} <br>
                        
                             
                               

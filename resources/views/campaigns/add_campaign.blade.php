@@ -124,26 +124,26 @@
           
                       
                 Name Of Campaign
-                   {!! Form::text('campaign_name', '', ['class'=>'form-control','placeholder'=>'name of campaign']) !!} <br>
+                   {!! Form::text('campaign_name', '', ['class'=>'form-control','placeholder'=>'name of campaign','required'=>'required']) !!} <br>
                
                Name Of Organizer
-                   {!! Form::text('organizer_name','', ['class'=>'form-control','placeholder'=>'Organizer Name']) !!} <br>
+                   {!! Form::text('organizer_name','', ['class'=>'form-control','placeholder'=>'Organizer Name','required'=>'required']) !!} <br>
    
    
                 Contact
-                   {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact']) !!} <br>
+                   {!! Form::text('contact','', ['class'=>'form-control','placeholder'=>'Contact','required'=>'required']) !!} <br>
        
                     
                     Date
-                  {!! Form::date('date', \Illuminate\Support\Carbon::now(), ['class'=>'form-control']) !!} <br>
+                  {!! Form::date('date', \Illuminate\Support\Carbon::now(), ['class'=>'form-control','required'=>'required']) !!} <br>
              
              
             
             Description 
-                   {!! Form::text('description','', ['class'=>'form-control','placeholder'=>'Description']) !!} <br>
+                   {!! Form::text('description','', ['class'=>'form-control','placeholder'=>'Description','required'=>'required']) !!} <br>
           
           
-          {!! Form::submit('add', ['class'=>'btn btn-primary mt-3 ']) !!} 
+          {!! Form::submit('add', ['class'=>'btn btn-primary mt-3 ','required'=>'required']) !!} 
    
                  {!! Form::close() !!}  
            </div>
