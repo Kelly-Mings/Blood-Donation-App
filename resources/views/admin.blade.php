@@ -54,7 +54,7 @@
             </div>
           </li>
           <li class="sidebar-dropdown">
-            <a href="#"><i class="fa fa-fire"></i><span>BLOOD REQUESTS</span></a>
+            <a href="#"><i class="fas fa-hand-holding-water"></i><span>BLOOD REQUESTS</span></a>
             <div class="sidebar-submenu">
               <ul>
                 <li><a href="/admin/blood-request">View Blood Requests</a></li>
@@ -120,7 +120,7 @@
   
               <span style="font-weight: bolder;font-size: 50px;">{{ count($announcements)}}</span>
   
-              <span class="float-right"><i class="fa fa-user fa-5x " style = "color: black;opacity: 0.2"></i></span>
+              <span class="float-right"><i class="fas fa-bullhorn fa-5x" style = "color: black;opacity: 0.2"></i></span>
             </div>
               </div>
 
@@ -138,9 +138,10 @@
              <div class="card shadow-lg" style="height: 120px; width: 450px;position: relative;left: 5px;top: 20px;background-color: #E8A800FF;color: white">
             <div class="card-body">
               <strong>Donors</strong><br>
+              <span style="font-weight: bolder;font-size: 50px;">{{ count($donors)}}</span>
+            
   
-  
-               <span class="float-right"><i class="fa fa-money fa-5x " style = "color: black;opacity: 0.2"></i></span>
+               <span class="float-right"><i class="fas fa-user fa-5x" style = "color: black;opacity: 0.2"></i></span>
               
               </div>
               </div>
@@ -151,7 +152,7 @@
   
               <span style="font-weight: bolder;font-size: 50px;">{{ count($requests)}}</span>
   
-               <span class="float-right"><i class="fa fa-fire fa-5x " style = "color: black;opacity: 0.2"></i></span>
+               <span class="float-right"><i class="fas fa-hand-holding-water fa-5x" style = "color: black;opacity: 0.2"></i></span>
              
               </div>
               </div>
